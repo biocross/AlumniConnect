@@ -1,7 +1,3 @@
-AlumniConnect
-=============
-Testing github - Abhilash Panigrahi
+Alumni Connect Project Repo
 
-
-
-Everybody's In! Let's begin! :D
+Working hard :)
