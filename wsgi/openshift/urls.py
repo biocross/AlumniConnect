@@ -2,14 +2,23 @@ from django.conf.urls import patterns, include, url
 
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
      url(r'^$', 'openshift.views.home'),
      url(r'^firstRegistration$', 'openshift.views.firstForm'),
      url(r'^firstRegistrationSubmit$', 'openshift.views.firstRegistrationSubmit'),
+     
+
+
+
+
+     #Admin URLS:
+     url(r'^insertBatch', 'openshift.views.BatchInsert'),
+     url(r'^insertBranch', 'openshift.views.BranchInsert'),
+     url(r'^educationForm', 'openshift.views.EducationInsert'),
 
 
 	url(r'^profile$', 'openshift.views.profilePage'),
@@ -22,5 +31,7 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+
+     url(r'^allusers$', 'openshift.views.AllUsers'),
+     url(r'^admin/', include(admin.site.urls)),
 )
