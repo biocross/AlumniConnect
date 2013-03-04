@@ -1,16 +1,64 @@
-from django.http import HttpResponse
+from django.http import *
 from django.shortcuts import render_to_response
 from openshift.models import *
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import *
 
 #Static pages
 def home(request):
 	return HttpResponse("Alumni Connect framework<br/><br/>Under Contruction as on 04/03/2013")
 
 #Dynamic Pages / Forms / Pages which need arguments
-def firstForm(request):
+def Registration(request):
 	myForm = UserForm()
 	return render_to_response('firstRegistration.html' , {'firstRegistrationForm' : myForm.as_ul()  })
+
+@login_required(login_url='/login')
+def Registration_Step2(request):
+	myForm = UserForm_Step2()
+	if(request.user.is_authenticated()):
+		logoutButton = "<button "
+		session = "you are logged in as " + request.user.username
+		return render_to_response('registrationStep2.html', { 'secondForm' : myForm.as_ul(), 'session' : session   }  )
+	else:
+		session = "you're not logged in .. wtf?"
+		return HttpResponse("<h3>Sorry, you cant access this page without logging in.</h3>")
+	
+
+
+
+@csrf_exempt
+def firstRegistrationSubmit(request):
+	if request.method == "POST":
+		form = UserForm(request.POST)
+		if (form.is_valid()):
+			form.save()
+			new_user = authenticate(username=request.POST['username'], password=request.POST['password'])
+			login(request, new_user)
+			return HttpResponseRedirect("/registrationStep2")
+		else:
+			return HttpResponse("error!")
+		
+	if request.method == "GET":
+		return HttpResponse("GET used. nothing here, move along!")
+
+@csrf_exempt
+def UserRegComplete(request):
+	if request.method == "POST":
+		form = UserForm_Step2(request.POST)
+		if (form.is_valid()):
+			form.save()
+			return HttpResponseRedirect("/home")
+		else:
+			return HttpResponse("go away!")
+
+
+
+def Home(request):
+	user = request.user
+	return render_to_response("home.html", {'user' : user })
+
 	
 def profilePage(request):
 	if request.method == "GET":
@@ -72,18 +120,8 @@ def BranchInsert(request):
 
 
 #Data Acceptors
-@csrf_exempt
-def firstRegistrationSubmit(request):
-	if request.method == "POST":
-		form = UserForm(request.POST)
-		if (form.is_valid()):
-			form.save()
-			return HttpResponse("inserted")
-		else:
-			return HttpResponse("error!")
-		
-	if request.method == "GET":
-		return HttpResponse("GET used. nothing here, move along!")
+
+
 
 
 #Temporary Views:

@@ -1,6 +1,7 @@
 from django.db import models
 from django import forms
 from django.forms import ModelForm
+from django.contrib.auth.models import User
 
 #models
 
@@ -34,6 +35,14 @@ class InsertBranch(forms.ModelForm):
 
 
 
+#Django User (the superset of all users)
+class UserProfile(models.Model):
+    user = models.ForeignKey(User, unique=True)
+    batch = models.ManyToManyField(Batch)
+    branch = models.ManyToManyField(Branch)
+
+
+'''
 #Main Models
 class User(models.Model):
 
@@ -49,7 +58,7 @@ class User(models.Model):
     #headshot = models.ImageField(upload_to='/profilepictures')
     #added = models.DateTimeField(db_index=True, auto_now_add=True)
     #modified=models.DateTimeField(auto_now=True)
-
+'''
 
 
 
@@ -58,6 +67,17 @@ class User(models.Model):
 class UserForm(forms.ModelForm):
 	class Meta:
 		model = User
+		exclude = ("is_staff", "is_active", "is_superuser", "last_login", "date_joined" )
+	def save(self, commit=True):
+		user = super(UserForm, self).save(commit=False)
+		user.set_password(self.cleaned_data["password"])
+		if commit:
+			user.save()
+		return user
+
+class UserForm_Step2(forms.ModelForm):
+	class Meta:
+		model = UserProfile
 		
 
 

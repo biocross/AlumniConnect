@@ -8,8 +8,12 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
      url(r'^$', 'openshift.views.home'),
-     url(r'^firstRegistration$', 'openshift.views.firstForm'),
-     url(r'^firstRegistrationSubmit$', 'openshift.views.firstRegistrationSubmit'),
+     url(r'^firstRegistration$', 'openshift.views.Registration'),   #first registration
+     url(r'^firstRegistrationSubmit$', 'openshift.views.firstRegistrationSubmit'), #submit first reg
+     url(r'^registrationStep2$', 'openshift.views.Registration_Step2'), #second registation step
+     url(r'^UserRegComplete$', 'openshift.views.UserRegComplete'), #second step complete
+
+     url(r'^home$', 'openshift.views.Home'),    #Home page - Dashboard
      
 
 
