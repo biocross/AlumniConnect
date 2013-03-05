@@ -2,6 +2,7 @@ from django.db import models
 from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
 
 #models
 
@@ -36,16 +37,11 @@ class InsertBranch(forms.ModelForm):
 
 #Django User (the superset of all users)
 class UserProfile(models.Model):
-    user = models.OneToOneField(User)
+    user = models.ForeignKey(User, unique=True)
     batch = models.ManyToManyField(Batch)
     branch = models.ManyToManyField(Branch)
 
-
-def create_user_profile(sender, instance, created, **kwargs):
-    if created:
-        UserProfile.objects.create(user=instance)
-
-post_save.connect(create_user_profile, sender=User)
+User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
 
 '''
 #Main Models
@@ -78,7 +74,9 @@ class UserForm(forms.ModelForm):
 		user.set_password(self.cleaned_data["password"])
 		if commit:
 			user.save()
+			UserProfile.objects.create(user=user)
 		return user
+		
 
 class UserForm_Step2(forms.ModelForm):
 	class Meta:

@@ -25,7 +25,6 @@ urlpatterns = patterns('',
      #Admin URLS:
      url(r'^insertBatch', 'openshift.views.BatchInsert'),
      url(r'^insertBranch', 'openshift.views.BranchInsert'),
-     url(r'^educationForm', 'openshift.views.EducationInsert'),
 
 
 	 url(r'^profile$', 'openshift.views.profilePage'),
