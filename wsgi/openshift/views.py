@@ -63,7 +63,6 @@ def firstRegistrationSubmit(request):
 			form.save()
 			new_user = authenticate(username=request.POST['username'], password=request.POST['password'])
 			login(request, new_user)
-			UserProfile.objects.create(user=request.user)
 			return HttpResponseRedirect("/registrationStep2")
 		else:
 			return HttpResponse("error!")
