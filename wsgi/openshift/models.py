@@ -34,13 +34,18 @@ class InsertBranch(forms.ModelForm):
 
 
 
-
 #Django User (the superset of all users)
 class UserProfile(models.Model):
-    user = models.ForeignKey(User, unique=True)
+    user = models.OneToOneField(User)
     batch = models.ManyToManyField(Batch)
     branch = models.ManyToManyField(Branch)
 
+
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        UserProfile.objects.create(user=instance)
+
+post_save.connect(create_user_profile, sender=User)
 
 '''
 #Main Models

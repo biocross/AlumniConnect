@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.conf import settings
 
 
 # Uncomment the next two lines to enable the admin:
@@ -14,6 +15,8 @@ urlpatterns = patterns('',
      url(r'^UserRegComplete$', 'openshift.views.UserRegComplete'), #second step complete
 
      url(r'^home$', 'openshift.views.Home'),    #Home page - Dashboard
+     url(r'^login$', 'openshift.views.Login'),
+     url(r'^logout$', 'openshift.views.Logout'),  
      
 
 
@@ -25,7 +28,7 @@ urlpatterns = patterns('',
      url(r'^educationForm', 'openshift.views.EducationInsert'),
 
 
-	url(r'^profile$', 'openshift.views.profilePage'),
+	 url(r'^profile$', 'openshift.views.profilePage'),
 
 
 

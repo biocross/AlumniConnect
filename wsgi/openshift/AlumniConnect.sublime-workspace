@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Ht",
+				"HttpResponseRedirect"
+			],
+			[
+				"UserF",
+				"UserForm"
+			],
+			[
+				"Re",
+				"registrationStep2"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"Model",
+				"ModelForm"
+			],
+			[
+				"r",
+				"render_to_response"
+			],
+			[
+				"O",
+				"objects"
+			],
+			[
+				"inser",
+				"inserted"
+			],
+			[
+				"insert",
+				"InsertBatch"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"mdel",
+				"ModelForm"
+			],
+			[
+				"form",
+				"forms"
+			],
+			[
+				"cs",
+				"csrf_exempt"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"User",
+				"User"
+			],
+			[
+				"Mo",
+				"ModelForm"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"First",
+				"firstRegistrationSubmit"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 3831,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 6618,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin.py",
+			"settings":
+			{
+				"buffer_size": 74,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models.py",
+			"settings":
+			{
+				"buffer_size": 2164,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "urls.py",
+			"settings":
+			{
+				"buffer_size": 1322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/allusers.html",
+			"settings":
+			{
+				"buffer_size": 101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/educationInsert.html",
+			"settings":
+			{
+				"buffer_size": 131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/firstRegistration.html",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/generalInsertForm.html",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registrationStep2.html",
+			"settings":
+			{
+				"buffer_size": 138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/home.html",
+			"settings":
+			{
+				"buffer_size": 189,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Short Tag"
+			],
+			[
+				"",
+				"Snippet: Try/Except/Finally"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Sids/Desktop/kitattx/kitattx/main.py",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/models.pyc",
+		"/Users/Sids/Desktop/blogdjango/apps/homepage/views.py",
+		"/Users/Sids/Desktop/vitcloud/wsgi/openshift/urls.py",
+		"/Users/Sids/Desktop/vitcloud/wsgi/openshift/views.py",
+		"/Users/Sids/Desktop/vita/php/lifeatvit/index.html",
+		"/Users/Sids/Desktop/vita/php/lifeatvit/placements.html",
+		"/Users/Sids/Downloads/Placements and statistics-Priyam.docx",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/templates/firstRegistration.html",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/urls.py",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/views.py",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/models.py",
+		"/Users/Sids/Desktop/ldid3.py",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/tdmtanf",
+		"/Users/Sids/Desktop/AlumniConnect/README.md",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Specifications/iPhoneCodeSign.xcspec",
+		"/Users/Sids/Desktop/ac_act/wsgi/openshift/forms.py",
+		"/Users/Sids/Desktop/AlumniConnect/AlumniConnect/models.py",
+		"/Users/Sids/Desktop/AlumniConnect/AlumniConnect/urls.py",
+		"/Users/Sids/Desktop/AlumniConnect/AlumniConnect/forms.py",
+		"/Users/Sids/Desktop/AlumniConnect/AlumniConnect/views.py",
+		"/Users/Sids/Desktop/AlumniConnect/AlumniConnect/views.pyc",
+		"/Users/Sids/Desktop/mortar-tab-view-0.1.1/www/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"education",
+			"/usr/bin/codesign",
+			"models"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/usr/local/bin/ldid3.py",
+			"forms"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views.py",
+					"settings":
+					{
+						"buffer_size": 3831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1534,
+								1534
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 355.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "settings.py",
+					"settings":
+					{
+						"buffer_size": 6618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4594,
+								4594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "admin.py",
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "models.py",
+					"settings":
+					{
+						"buffer_size": 2164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 55.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "urls.py",
+					"settings":
+					{
+						"buffer_size": 1322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								902,
+								902
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/allusers.html",
+					"settings":
+					{
+						"buffer_size": 101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/educationInsert.html",
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/firstRegistration.html",
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/generalInsertForm.html",
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/registrationStep2.html",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/home.html",
+					"settings":
+					{
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/urls.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

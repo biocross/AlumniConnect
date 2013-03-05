@@ -12,7 +12,7 @@ def home(request):
 #Dynamic Pages / Forms / Pages which need arguments
 def Registration(request):
 	myForm = UserForm()
-	return render_to_response('firstRegistration.html' , {'firstRegistrationForm' : myForm.as_ul()  })
+	return render_to_response('firstRegistration.html' , {'firstRegistrationForm' : myForm.as_p()  })
 
 @login_required(login_url='/login')
 def Registration_Step2(request):
@@ -25,8 +25,35 @@ def Registration_Step2(request):
 		session = "you're not logged in .. wtf?"
 		return HttpResponse("<h3>Sorry, you cant access this page without logging in.</h3>")
 	
+@csrf_exempt
+def Login(request):
+	if request.method =="GET":
+		if (request.user.is_authenticated()):
+			return HttpResponseRedirect("/home")
+		else:
+			return render_to_response("login.html")
+
+	if request.method =="POST":
+		username = request.POST['username']
+    	password = request.POST['password']
+    	user = authenticate(username=username, password=password)
+    	if user is not None:
+        	if user.is_active:
+        		login(request, user)
+        		# Redirect to a success page.
+        		return HttpResponseRedirect("/home")
+        	else:
+        		return render_to_response("login.html", {'message' : "Sorry, your credentials are invalid."})
+        else:
+        	return render_to_response("login.html", {'message' : "Sorry, your credentials are invalid."})
 
 
+def Logout(request):
+	if (request.user.is_authenticated()):
+		logout(request)
+		return render_to_response("login.html", {'message': "You have successfully logged out." })
+	else:
+		return render_to_response("login.html", {'message': "You need to login first to logout!" })
 
 @csrf_exempt
 def firstRegistrationSubmit(request):
@@ -54,10 +81,11 @@ def UserRegComplete(request):
 			return HttpResponse("go away!")
 
 
-
+@login_required(login_url="/login")
 def Home(request):
 	user = request.user
-	return render_to_response("home.html", {'user' : user })
+	profile = user.get_profile()
+	return render_to_response("home.html", {'user' : user, "profile": profile } )
 
 	
 def profilePage(request):

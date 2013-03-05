@@ -1,8 +1,43 @@
 
 
-<form action="firstRegistrationSubmit" method="POST">
-	
-		{{ firstRegistrationForm }}
-<input type="Submit" value="Register">
+<head>
+	<title> AlumniConnect | Register </title>
+	<link rel="stylesheet" href="/static/css/style.css">
+<style>
 
+.helptext{
+	display: none;
+
+}
+
+label{
+	width: 91px;
+}
+
+#id_groups{
+	display: none;
+}
+
+#id_user_permissions{
+	display: none;
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>	
+<form action="firstRegistrationSubmit" method="POST" class="login">
+	 	
+	 {{firstRegistrationForm}}
+		
+
+		
+<input type="Submit" value="Register">
 </form>
+</body>
