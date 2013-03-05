@@ -16,7 +16,7 @@ def Registration(request):
 
 @login_required(login_url='/login')
 def Registration_Step2(request):
-	myForm = UserForm_Step2()
+	myForm = UserForm_Step2(initial={'user': request.user})
 	if(request.user.is_authenticated()):
 		logoutButton = "<button "
 		session = "you are logged in as " + request.user.username
@@ -78,14 +78,17 @@ def UserRegComplete(request):
 			form.save()
 			return HttpResponseRedirect("/home")
 		else:
-			return HttpResponse(form.errors)
+			return HttpResponse(form.errors['user'])
+		
 
 
 @login_required(login_url="/login")
 def Home(request):
 	user = request.user
 	profile = user.get_profile()
-	return render_to_response("home.html", {'user' : user, "profile": profile } )
+	branch = profile.branch.all()
+	batch = profile.batch.all()
+	return render_to_response("home.html", {'user' : user, "branch": branch[0], "batch":batch[0]} )
 
 	
 def profilePage(request):

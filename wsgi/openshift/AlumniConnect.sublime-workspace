@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"shor",
+				"shortName"
+			],
+			[
+				"Man",
+				"ManyToManyField"
+			],
+			[
+				"For",
+				"ForeignKey"
+			],
+			[
+				"Htt",
+				"HttpResponse"
+			],
+			[
+				"true",
+				"True"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"in",
+				"generalInsertForm"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"is",
+				"is_authenticated"
+			],
+			[
 				"Ht",
 				"HttpResponseRedirect"
 			],
@@ -14,10 +54,6 @@
 			[
 				"Re",
 				"registrationStep2"
-			],
-			[
-				"is",
-				"is_valid"
 			],
 			[
 				"Model",
@@ -72,10 +108,6 @@
 				"ModelForm"
 			],
 			[
-				"in",
-				"input	Tag"
-			],
-			[
 				"First",
 				"firstRegistrationSubmit"
 			]
@@ -83,94 +115,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "views.py",
-			"settings":
-			{
-				"buffer_size": 3831,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "settings.py",
-			"settings":
-			{
-				"buffer_size": 6618,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "admin.py",
-			"settings":
-			{
-				"buffer_size": 74,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models.py",
-			"settings":
-			{
-				"buffer_size": 2164,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "urls.py",
-			"settings":
-			{
-				"buffer_size": 1322,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/allusers.html",
-			"settings":
-			{
-				"buffer_size": 101,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/educationInsert.html",
-			"settings":
-			{
-				"buffer_size": 131,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/firstRegistration.html",
-			"settings":
-			{
-				"buffer_size": 135,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/generalInsertForm.html",
-			"settings":
-			{
-				"buffer_size": 118,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registrationStep2.html",
-			"settings":
-			{
-				"buffer_size": 138,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/home.html",
-			"settings":
-			{
-				"buffer_size": 189,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -204,6 +148,17 @@
 	},
 	"file_history":
 	[
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/registrationStep2.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/generalInsertForm.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/firstRegistration.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/educationInsert.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/allusers.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/urls.py",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/settings.py",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/admin.py",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/models.py",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/templates/home.html",
+		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/views.py",
 		"/Users/Sids/Desktop/kitattx/kitattx/main.py",
 		"/Users/Sids/Desktop/AlumniConnect/wsgi/openshift/models.pyc",
 		"/Users/Sids/Desktop/blogdjango/apps/homepage/views.py",
@@ -266,300 +221,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "views.py",
-					"settings":
-					{
-						"buffer_size": 3831,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1534,
-								1534
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 355.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "settings.py",
-					"settings":
-					{
-						"buffer_size": 6618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4594,
-								4594
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1405.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "admin.py",
-					"settings":
-					{
-						"buffer_size": 74,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "models.py",
-					"settings":
-					{
-						"buffer_size": 2164,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "urls.py",
-					"settings":
-					{
-						"buffer_size": 1322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								902,
-								902
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/allusers.html",
-					"settings":
-					{
-						"buffer_size": 101,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "templates/educationInsert.html",
-					"settings":
-					{
-						"buffer_size": 131,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/firstRegistration.html",
-					"settings":
-					{
-						"buffer_size": 135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/generalInsertForm.html",
-					"settings":
-					{
-						"buffer_size": 118,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "templates/registrationStep2.html",
-					"settings":
-					{
-						"buffer_size": 138,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								138,
-								138
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "templates/home.html",
-					"settings":
-					{
-						"buffer_size": 189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								189,
-								189
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

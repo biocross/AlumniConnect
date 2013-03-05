@@ -38,9 +38,11 @@ class InsertBranch(forms.ModelForm):
 #Django User (the superset of all users)
 class UserProfile(models.Model):
     user = models.ForeignKey(User, unique=True)
-    batch = models.CharField(max_length="100")
+    batch = models.ManyToManyField(Batch)
+    branch = models.ManyToManyField(Branch)
 
-User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
+
+#User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
 
 '''
 #Main Models
@@ -73,7 +75,6 @@ class UserForm(forms.ModelForm):
 		user.set_password(self.cleaned_data["password"])
 		if commit:
 			user.save()
-			UserProfile.objects.create(user=user)
 		return user
 		
 
